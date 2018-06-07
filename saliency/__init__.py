@@ -30,7 +30,7 @@ def generate_saliency(model, input, target, type = SaliencyMethod.VANILLA):
     saliencies[MapType.NEGATIVE] = neg_map
 
     abs_map = output.abs()
+    abs_map = abs_map / abs_map.max()
     saliencies[MapType.ABSOLUTE] = abs_map
-
 
     return saliencies
