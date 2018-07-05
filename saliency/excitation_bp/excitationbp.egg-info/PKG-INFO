@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: excitationbp
+Version: 0.1
+Summary: A minimal implementation of excitation backprop for PyTorch
+Home-page: UNKNOWN
+Author: Sam Greydanus
+Author-email: ['greydanus.17@gmail.com']
+License: MIT
+Description: UNKNOWN
+Keywords: deep-learning,excitation-backprop,visualization,interpretability
+Platform: UNKNOWN

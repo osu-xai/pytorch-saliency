@@ -31,5 +31,7 @@ class GuidedSaliency(Saliency):
         output.backward(gradient = grad_outputs)
 
         input.requires_grad = False
+        
 
-        return input.grad.clone()[0]
+
+        return (input.grad.clone()[0] * input)

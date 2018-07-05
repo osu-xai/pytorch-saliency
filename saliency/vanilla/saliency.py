@@ -1,5 +1,6 @@
 import torch
 from saliency.saliency import Saliency
+import numpy
 
 
 class VanillaSaliency(Saliency):
@@ -24,4 +25,11 @@ class VanillaSaliency(Saliency):
 
         input.requires_grad = False
 
-        return input.grad.clone()[0]
+        #print(input)
+        #torch.set_printoptions(threshold=10000)
+        #print(input.numpy().shape)
+        #f = open('input.txt', 'w+')
+        #f.write(str(input.numpy()))
+        #f.close()
+
+        return (input.grad.clone()[0] * input)
