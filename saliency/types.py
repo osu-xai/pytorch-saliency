@@ -1,13 +1,13 @@
 from enum import Enum
 
 class SaliencyMethod(Enum):
-    VANILLA = 1
-    GUIDED = 2
-    DECONV = 3
-    TEST = 4
-    PERTURBATION = 5
-    PERTURBATION_2 = 6
-    LIME = 7
+    # VANILLA = 1
+    # GUIDED = 2
+    # DECONV = 3
+    # TEST = 4
+    # PERTURBATION = 5
+    PERTURBATION_2 = 1
+    #LIME = 7
     #EXCITATIONBP = 6
 
 
