@@ -1,7 +1,7 @@
 from setuptools import find_packages
 from setuptools import setup
 
-REQUIRED_PACKAGES = ["torch==0.4.0"]
+REQUIRED_PACKAGES = ["torch>=0.4.0"]
 
 
 setup( name='pytorch-saliency',
