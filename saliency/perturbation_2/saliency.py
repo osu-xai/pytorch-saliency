@@ -28,7 +28,7 @@ class Perturbation_2Saliency(Saliency):
 
 
         #return (input.grad.clone()[0] * input)
-        input2 = input.clone()
+        input2 = input.cpu().clone()
         image = np.zeros((40, 40))
         input2 = input2.view(40, 40, 8)
 
